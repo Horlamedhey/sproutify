@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <style href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"></style>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="styles/timeline.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" />
+  <link href="styles/index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page-wrap" id="app">
+    <nav class="py-2 absolute top-0 top-bottom-content items-center flex">
+      <div class="px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. -->
+              <!--
+            Heroicon name: menu
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!--
+            Heroicon name: x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex-1 flex items-center justify-center sm:justify-start">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-primary hover:bg-gray-700 hover:text-white" -->
+
+                <a href="#"
+                  class="transition duration-300 text-white hover:bg-gray-100 hover:my-text-primary px-3 py-2 rounded-md text-base">
+                  About
+                </a>
+                <a href="#"
+                  class="transition duration-300 text-white hover:bg-gray-100 hover:my-text-primary hover:text-white px-3 py-2 rounded-md text-base">
+                  FAQ
+                </a>
+                <a href="#"
+                  class="transition duration-300 text-white hover:bg-gray-100 hover:my-text-primary hover:text-white px-3 py-2 rounded-md text-base">
+                  Contract
+                </a>
+                <a href="#" class="bg-white my-text-primary y px-3 py-2 rounded-md text-xl">
+                  Trans-Farm SPRT
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="home-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-one">
+            <div class="swiper-image" data-swiper-parallax-y="-20%">
+              <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                <h1 class="my-headings text-4xl">What is Sproutify?</h1>
+                <p>
+                  <span class="my-text-secondary-light text-lg">
+                    Sproutify alludes to a specific cryptocurrency farming
+                    method that relies on Uniswap trading fees to create a
+                    non-inflationary and highly-profitable farming system for
+                    traders. Sproutify uses a new innovative cryptocurrency
+                    farming called Trans-farming.
+                  </span>
+                  <br />
+                  <span class="my-text-secondary text-base mt-4 block">
+                    Trans-farming is a unique feature that enables users to
+                    recoup their Uniswap trading fees by automatically
+                    refunding the equivalent amount in SPRT tokens on SPRT
+                    Uniswap Buy Trades. The token Contract is already deployed
+                    to
+                    <a href="https://etherscan.io/token/0x44321a51275b6a17cb1457b587f414c4386d0d94" style="color: red">
+                      Ethereum mainnet.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-image" data-swiper-parallax-y="35%">
+              <div class="swiper-image-inner swiper-image-right swiper-image-two p-16">
+                <div class="m-auto">
+                  <h1 class="text-5xl mb-8">
+                    The first Comprehensive Non-inflationary Trans-farming
+                    Protocol.
+                  </h1>
+                  <div class="content-link">
+                    <a href="#" class="bg-white my-text-primary px-3 py-2 rounded-md text-xl">
+                      Whitelist Wallet
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-two">
+            <div class="swiper-image" data-swiper-parallax-y="-20%">
+              <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                <h1 class="my-headings text-4xl">Trans-farming Incentive</h1>
+                <p>
+                  <span class="my-text-secondary-light text-lg">
+                    The key benefit of Trans-farming is that it gives users
+                    the ability to offset their transaction fees by earning
+                    SPRT token (a trade farming token).
+                  </span>
+                  <br />
+                  <span class="my-text-secondary text-base mt-4 block italic" style="color: #008000;">
+                    "Sproutify creates profits for farmers from its
+                    ongoing series of transactions and infuse it into the
+                    market to provide a constant asymptotic upward pressure."
+                  </span>
+                </p>
+                <h1 class="my-headings text-4xl">Sproutify Goal</h1>
+                <p>
+                  <span class="my-text-secondary-light text-lg">
+                    The future goals for the Sproutify platform can be summarized as SPRT Liquidity Amplification and
+                    are listed below:
+                  </span>
+                  <br />
+                  <span class="my-text-secondary text-base mt-4 block">
+                    1) SPRT Price Increase.
+                    <br>
+                    2) Ecosystem Sustainability.
+                  </span>
+                  <br />
+                  <span class="my-text-secondary text-base mt-4 block">
+                    Liquidity Amplifier dapps are used for SPRT token buybacks and adding
+                    to the SPRT liquidity pool. Liquidity Amplifier Dapps could be of several
+                    forms, such as SPRT LP token staking for NFT tokens or gaming dapps
+                    that generates funds to achieve the purpose of SPRT Uniswap Liquidity increase.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-image" data-swiper-parallax-y="35%">
+              <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                <p class="paragraph">
+                  A thirsty Crow found a Pitcher with some water in it, but so
+                  little was there that, try as she might, she could not reach
+                  it with her beak, and it seemed as though she would die of
+                  thirst within sight of the remedy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-three">
+            <div class="swiper-image" data-swiper-parallax-y="-20%">
+              <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                <h1 class="my-headings text-4xl">Roadmap</h1>
+
+                
+<div class="container">
+  <h1 class="title">Responsive Slider Timeline</h1>
+  <div class="timeline">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11" data-year="2011">
+          <div class="swiper-slide-content"><span class="timeline-year">2011</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12" data-year="2012">
+          <div class="swiper-slide-content"><span class="timeline-year">2012</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13" data-year="2013">
+          <div class="swiper-slide-content"><span class="timeline-year">2013</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14" data-year="2014">
+          <div class="swiper-slide-content"><span class="timeline-year">2014</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15" data-year="2015">
+          <div class="swiper-slide-content"><span class="timeline-year">2015</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16" data-year="2016">
+          <div class="swiper-slide-content"><span class="timeline-year">2016</span>
+            <h4 class="timeline-title">Our nice super title</h4>
+            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="swiper-image" data-swiper-parallax-y="35%">
+              <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                <p class="paragraph">
+                  Every man carries Two Bags about with him, one in front and
+                  one behind, and both are packed full of faults. The Bag in
+                  front contains his neighbours’ faults, the one behind his
+                  own. Hence it is that men do not see their own faults, but
+                  never fail to see those of others.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="flex-shrink-0 flex items-center absolute bottom-0 top-bottom-content">
+      <img class="h-20 w-auto" src="images/logo.png" alt="Sproutify" />
+    </div>
+  </div>
+  <!-- <script src="scripts/vue.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+  <script src="scripts/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="scripts/timeline.js"></script>
+</body>
+
+</html>
